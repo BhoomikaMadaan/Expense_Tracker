@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Expense Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💰 Expense Tracker</h1>
+            <nav class="nav">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="expenses.html">Expenses</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+        </div>
+
+        <div class="grid grid-3">
+            <div class="card">
+                <h3>Total Spent</h3>
+                <h2 id="totalSpent" class="stat-red">₹0.00</h2>
+            </div>
+            <div class="card">
+                <h3>This Month</h3>
+                <h2 id="monthlySpent" class="stat-green">₹0.00</h2>
+            </div>
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <h2 id="remainingBalance" class="stat-blue">₹0.00</h2>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="money-icon">💰</div>
+            <h3>Track Your Expenses</h3>
+            <p class="text-muted">Keep your finances organized</p>
+        </div>
+
+
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

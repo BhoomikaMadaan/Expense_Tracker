@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics - Expense Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💰 Expense Tracker</h1>
+            <nav class="nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="expenses.html">Expenses</a>
+                <a href="analytics.html" class="active">Analytics</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+        </div>
+
+        <div class="grid grid-2">
+            <div class="card">
+                <h3>Spending by Category</h3>
+                <canvas id="categoryChart"></canvas>
+            </div>
+            <div class="card">
+                <h3>Monthly Spending</h3>
+                <canvas id="monthlyChart"></canvas>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Spending Summary</h3>
+            <div id="summaryStats" class="grid grid-3">
+                <div>
+                    <h4>Highest Category</h4>
+                    <p id="highestCategory">-</p>
+                </div>
+                <div>
+                    <h4>Average Daily</h4>
+                    <p id="averageDaily">$0.00</p>
+                </div>
+                <div>
+                    <h4>Total Transactions</h4>
+                    <p id="totalTransactions">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/analytics.js"></script>
+</body>
+</html>

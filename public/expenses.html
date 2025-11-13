@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expenses - Expense Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💰 Expense Tracker</h1>
+            <nav class="nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="add-expense.html">Add Expense</a>
+                <a href="expenses.html" class="active">Expenses</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+        </div>
+
+        <div class="card">
+            <div class="flex-between">
+                <h2>All Expenses</h2>
+                <a href="add-expense.html" class="btn btn-success">Add New</a>
+            </div>
+            
+            <div class="flex-gap">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Other">Other</option>
+                </select>
+                <select id="sortBy">
+                    <option value="date">Sort by Date</option>
+                    <option value="amount">Sort by Amount</option>
+                    <option value="category">Sort by Category</option>
+                </select>
+            </div>
+
+            <table class="table" id="expensesTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Notes</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/expenses.js"></script>
+</body>
+</html>
